@@ -4,8 +4,120 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>História e Cultura de Ilhéus</title>
-  <!-- Link do CSS externo -->
-  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Corpo do site */
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      line-height: 1.6;
+      background: #f4f4f9;
+      color: #333;
+    }
+
+    /* Cabeçalho com imagem de fundo */
+    header {
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                  url('https://magazine.zarpo.com.br/wp-content/uploads/2021/11/Praia-da-Engenhoca-Itacare.jpg') no-repeat center center;
+      background-size: cover;
+      color: white;
+      text-align: center;
+      padding: 80px 20px; /* aumenta a altura do header */
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+    }
+
+    nav {
+      margin-top: 15px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffd54f;
+      text-decoration: underline;
+    }
+
+    /* Seções */
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #4b2e83;
+      margin-bottom: 20px;
+      border-left: 6px solid #7a4ee0;
+      padding-left: 10px;
+    }
+
+    /* Cards de locais */
+    .lugar {
+      background: white;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .lugar:hover {
+      transform: translateY(-5px);
+    }
+
+    .lugar h3 {
+      color: #7a4ee0;
+      margin-bottom: 10px;
+    }
+
+    .lugar img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    /* Relatos */
+    .relato {
+      background: #fff;
+      border-left: 6px solid #ffd54f;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    }
+
+    .relato p strong {
+      color: #4b2e83;
+    }
+
+    /* Rodapé */
+    footer {
+      background: #4b2e83;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
+
+  </style>
 </head>
 <body>
   <header>
@@ -23,21 +135,25 @@
 
     <div class="lugar">
       <h3>Bataclan</h3>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Bataclan_%28Ilh%C3%A9us%29.jpg/800px-Bataclan_%28Ilh%C3%A9us%29.jpg" alt="Bataclan Ilhéus">
       <p>O Bataclan, localizado em Ilhéus, foi construído na década de 1920 e, ao longo de sua história, desempenhou diferentes funções, incluindo casa de shows, cassino e atividades voltadas para o público adulto. Durante o período áureo do cacau, destacou-se como um importante centro social e cultural, frequentado tanto por coronéis quanto por figuras conhecidas como “damas da noite”, sendo inclusive imortalizado na obra de Jorge Amado. Em 1946, o estabelecimento foi fechado em razão da promulgação de leis que proibiam cassinos e esse tipo de atividade. Ao longo dos anos, o Bataclan passou por diversas fases, incluindo períodos de abandono e processos de restauração. Atualmente, o local foi reaberto e funciona como um espaço cultural, preservando a memória histórica e as lendas associadas à região.</p>
     </div>
 
     <div class="lugar">
       <h3>Casa de Jorge Amado</h3>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Casa_de_Cultura_Jorge_Amado_Rua_Jorge_Amado.jpg" alt="Casa de Jorge Amado">
       <p>A Casa de Jorge Amado, localizada no centro histórico de Ilhéus, foi construída na década de 1920 e inaugurada em 1926. O imóvel apresenta arquitetura eclética, mesclando elementos neoclássicos e coloniais, com destaque para o piso original e o uso de madeira típica da região, como o jacarandá. Jorge Amado residiu na casa com sua família até 1941, quando se mudou para Salvador. Em 1997, a residência foi transformada em espaço cultural, preservando a memória do escritor e promovendo atividades literárias e culturais, tornando-se um ponto de referência para a história literária brasileira.</p>
     </div>
 
     <div class="lugar">
       <h3>Catedral de São Sebastião</h3>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Catedral_de_S%C3%A3o_Sebasti%C3%A3o_de_Ilh%C3%A9us.jpg/800px-Catedral_de_S%C3%A3o_Sebasti%C3%A3o_de_Ilh%C3%A9us.jpg" alt="Catedral de São Sebastião">
       <p>A Catedral de São Sebastião, principal templo da Diocese de Ilhéus, teve sua construção iniciada em 1931 e concluída em 1967, após 36 anos de obras. Projetada pelo arquiteto Salomão da Silveira, a catedral apresenta estilo neoclássico com influências góticas, sendo reconhecida pela imponente abóbada de 47 metros de altura. Além de sua função religiosa, a catedral é um marco arquitetônico da cidade, refletindo a devoção local e a importância da fé na organização social e cultural de Ilhéus.</p>
     </div>
 
     <div class="lugar">
       <h3>Igreja de Nossa Senhora da Piedade</h3>
+      <img src="https://www.piedade.org.br/arquivos/paginas/16/765c3191253639a5a348db54cb960577.webp" alt="Igreja de Nossa Senhora da Piedade">
       <p>A Igreja de Nossa Senhora da Piedade foi consagrada em 1929 pelo Bispo Dom Manoel de Paiva. Sua construção segue o estilo neogótico, incorporando elementos ecléticos em seu conjunto arquitetônico. A igreja está intimamente ligada ao Instituto Nossa Senhora da Piedade, fundado em 1916 por Madre Thaís do Sagrado Coração Paillart, destinado à educação formal de meninas na cidade. Além de templo religioso, a igreja representa um símbolo da educação e da cultura ilheense, preservando tradições e valores comunitários.</p>
     </div>
   </section>
